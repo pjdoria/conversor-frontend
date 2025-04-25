@@ -16,7 +16,7 @@ function LongitudForm() {
     setResultado(null);
 
     try {
-      const res = await axios.get(`https://conversor-backend.onrender.com/api/longitud/convertir`, {
+      const res = await axios.get(`http://localhost:8080/api/longitud/convertir`, {
         params: { valor, desde, hacia }
       });
       setResultado(res.data);
