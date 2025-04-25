@@ -16,7 +16,7 @@ function TemperaturaForm() {
     setResultado(null);
 
     try {
-      const res = await axios.get('http://localhost:8080/api/temperatura/convertir', {
+      const res = await axios.get('https://conversor-backend-production.up.railway.app/api/temperatura/convertir', {
         params: { valor, desde, hacia }
       });
       setResultado(res.data);
