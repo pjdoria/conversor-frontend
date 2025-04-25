@@ -16,7 +16,7 @@ function PesoForm() {
     setResultado(null);
 
     try {
-      const res = await axios.get('http://localhost:8080/api/peso/convertir', {
+      const res = await axios.get('https://conversor-backend.onrender.com/api/peso/convertir', {
         params: { valor, desde, hacia }
       });
       setResultado(res.data);
